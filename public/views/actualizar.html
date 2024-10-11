@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Vehículo</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+</head>
+<body>
+    <button onclick="window.location.href='/views/principal.html'" class="btn-regresar">Regresar al Menú Principal</button>
+    <h1>Actualizar Vehículo</h1>
+    
+    <div id="seleccionVehiculo">
+        <h2>Seleccionar Vehículo</h2>
+        <select id="vehiculoSelect">
+            <option value="">Seleccione un vehículo</option>
+        </select>
+    </div>
+
+    <form id="actualizarForm" style="display: none;">
+        <input type="text" id="marca" placeholder="Marca" required>
+        <input type="text" id="modelo" placeholder="Modelo" required>
+        <input type="number" id="anio" placeholder="Año" required min="1880" max="2025">
+        <input type="text" id="placa" placeholder="Placa (Formato: A-AAA111)" required 
+               pattern="^[A-Z]-[A-Z]{3}[0-9]{3}$">
+        <select id="estado" required>
+            <option value="">Seleccione el estado</option>
+            <option value="Perfecto">Perfecto</option>
+            <option value="Daño menor">Daño menor</option>
+            <option value="Reparacion urgente">Reparación urgente</option>
+            <option value="En reparacion">En reparación</option>
+            <option value="Descarte">Descarte</option>
+        </select>
+        <button type="submit">Actualizar Vehículo</button>
+    </form>
+
+    <script src="/js/actualizar.js"></script>
+</body>
+</html>

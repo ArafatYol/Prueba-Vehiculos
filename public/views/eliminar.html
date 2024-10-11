@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Vehículo</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+</head>
+<body>
+
+    <button onclick="window.location.href='/views/principal.html'" class="btn-regresar">Regresar al Menú Principal</button>
+    <h1>Eliminar Vehículo</h1>
+    
+    <div class="table-container">
+        <table id="vehiculosTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Marca</th>
+                    <th>Modelo</th>
+                    <th>Año</th>
+                    <th>Placa</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos de los vehículos se cargarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/js/eliminar.js"></script>
+</body>
+</html>
