@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         });
 
         if (response.data.token) {
-            localStorage.setItem('token', response.data.token);
+            localStorage.setItem('token', response.data.token); // token es una firma digital 
             window.location.href = '/views/principal.html';
         }
     } catch (error) {
