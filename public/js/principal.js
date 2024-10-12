@@ -53,8 +53,8 @@ async function cargarVehiculos() {
     } catch (error) {
         Swal.fire({
             title: 'Error',
-            text: 'Error al cargar los vehículos',
+            text: 'Error al cargar los vehículos ',
             icon: 'error'
         });
     }
-}
+} 
