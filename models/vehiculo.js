@@ -8,6 +8,6 @@ class Vehiculo {
         this.placa = placa;
         this.estado = estado;
     }
-}
+} // estados de mejora agregar mas diseño
 
 module.exports = Vehiculo;
